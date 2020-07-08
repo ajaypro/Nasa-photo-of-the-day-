@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@+id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.deepak.nasa.ui.common.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_photoFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:destination="@id/photoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_videoFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:destination="@id/videoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.deepak.nasa.ui.photo.PhotoFragment"
+        android:label="PhotoFragment" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.deepak.nasa.ui.video.VideoFragment"
+        android:label="VideoFragment" />
+
+</navigation>
