@@ -10,7 +10,7 @@ buildscript {
             'versionName': "1.0"
     ]
     ext.names = [
-            'applicationId': 'com.yasin.nasa'
+            'applicationId': 'com.deepak.nasa'
     ]
     ext.library = [
             'appCompat'          : '1.1.0',
